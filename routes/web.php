@@ -26,8 +26,8 @@ Route::view('/home', 'home')->name('home');
 //     return view('user',['name'=>$name]);
 // })->name('user');
 
-Route::get('test/{id}', function ($id) {
-    return view('test');
+Route::get('test/{numbre}', function ($numbre) {
+    return view('test',['numbre'=>$numbre]);
 });
 
 Route::get('user/{name}', [userController::class,'index'])->name('user');
