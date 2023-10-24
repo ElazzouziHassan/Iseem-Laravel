@@ -16,7 +16,7 @@
                 <ul>
                     <li><a href="{{ url('/home') }}">Home</a></li>
                     <li><a href="{{ url('/user/HASSAN') }}">User</a></li>
-                    <li><a href="{{ url('/test/1') }}">Test Page</a></li>
+                    <li><a href="{{ url('/test/20') }}">Test Page</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,3 +25,4 @@
         </div>
     </body>
 </html>
+
