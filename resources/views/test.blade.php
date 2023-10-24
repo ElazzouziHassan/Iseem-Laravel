@@ -8,5 +8,10 @@
 </head>
 <body>
     <h1>Test view page</h1>
+    @if ($numbre > 0)
+        <h2>{{ $numbre }} is greatter than 0</h2>
+    @else
+    <h2>{{ $numbre }} is less than 0</h2>
+    @endif
 </body>
 </html>
