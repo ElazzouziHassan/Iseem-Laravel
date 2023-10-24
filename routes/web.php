@@ -18,7 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/home', 'home')->name('home');
+Route::view('/', 'home')->name('home');
+Route::view('/post', 'post')->name('post');
+Route::view('/test', 'test')->name('test');
+Route::view('/user', 'user')->name('user');
 
 // route::get('/home', [userController::class, 'index']);
 
@@ -26,8 +29,13 @@ Route::view('/home', 'home')->name('home');
 //     return view('user',['name'=>$name]);
 // })->name('user');
 
-Route::get('test/{numbre}', function ($numbre) {
-    return view('test',['numbre'=>$numbre]);
-});
+// Route::get('/test', function () {
+//     $stds = [
+//         1 => "Hassan",
+//         2 => "Oumnia",
+//         3 => "Kabira",
+//     ];
+//     return view('test',['stds'=>$stds]);
+// });
 
-Route::get('user/{name}', [userController::class,'index'])->name('user');
+// Route::get('user/{name}', [userController::class,'index'])->name('user');
